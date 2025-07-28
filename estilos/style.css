@@ -72,6 +72,16 @@ nav {
 
 }
 
+nav > button {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+
 nav > button > a {
     color: var(--cor1);
     padding: 10px;
@@ -168,6 +178,22 @@ aside > ul {
     list-style-type: disc;
     list-style-position: inside;
     columns: 2;
+}
+aside > ul > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+aside > ul > p > li{
+    margin:5px;
+    text-decoration: none;
 }
 
 footer {
