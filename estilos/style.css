@@ -84,6 +84,7 @@ nav > button {
 
 nav > button > a {
     color: var(--cor1);
+    margin:5px;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -93,11 +94,12 @@ nav > button > a {
 
 nav > button > a:hover {
     background-color: var(--cor3);
-    color: var(--cor5);
+    margin:5px;
+    padding: 10px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition-duration: 0.5s;
+    transition-duration: .5s;
 }
 
 main {
