@@ -114,14 +114,14 @@ main {
     border-bottom-right-radius: 10px;
 }
 
-main h1 {
+ h1 {
     color: var(--cor5);
     font-family: var(--fonte-Feira);
     font-weight: normal;
     font-size: 1.8em;
 }
 
-main h2 {
+ h2 {
     font-family: var(--fonte-Feira);
     color: var(--cor4);
     font-size: 1.3em;
@@ -130,7 +130,7 @@ main h2 {
     text-indent: 8px;
 }
 
-main p {
+  p {
     margin: 15px 0px;
     text-align: justify;
     text-indent: 30px;
@@ -138,12 +138,12 @@ main p {
     line-height: 2em;
 }
 
-main strong {
+ strong {
     color: var(--cor4);
     font-weight: bolder;
 }
 
-main a {
+ a {
     text-decoration: none;
     font-weight: bold;
     color: var(--cor5);
@@ -151,12 +151,12 @@ main a {
     padding: 2px 6px;
 }
 
-main a:hover {
+ a:hover {
     text-decoration: underline;
     color: var(--cor3);
 }
 
-main img {
+ img {
     width: 500px;
     height: auto;
 }
