@@ -82,7 +82,7 @@ nav > button {
 }
 
 
-nav > button > a {
+button > a {
     color: var(--cor1);
     margin:5px;
     padding: 10px;
@@ -92,7 +92,7 @@ nav > button > a {
     transition-duration: .5s;
 }
 
-nav > button > a:hover {
+button > a:hover {
     background-color: var(--cor3);
     margin:5px;
     padding: 10px;
