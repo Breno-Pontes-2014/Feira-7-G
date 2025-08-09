@@ -52,7 +52,7 @@ header > h1 {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
 
-header > p {
+header > nav > p {
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
     color: white;
@@ -82,8 +82,15 @@ nav > button {
 }
 
 
+button {
+    margin:3px; 
+    padding:5px;
+    background-color:var(--cor5);
+}
+
 button > a {
-    color: var(--cor1);
+    text-align: justify;
+    color: var(--cor4);
     margin:5px;
     padding: 10px;
     border-radius: 5px;
@@ -93,7 +100,7 @@ button > a {
 }
 
 button > a:hover {
-    background-color: var(--cor3);
+    background-color: var(--cor5);
     margin:5px;
     padding: 10px;
     border-radius: 5px;
@@ -157,7 +164,7 @@ main {
 }
 
  img {
-    width: 500px;
+    width: 50%;
     height: auto;
 }
 
