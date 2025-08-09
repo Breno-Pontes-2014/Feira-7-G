@@ -1,4 +1,5 @@
 <?php
+$feedback = htmlspecialchars(trim($_POST["feedback"]), ENT_QUOTES, 'UTF-8');
 // Verifica se o formulário foi enviado via POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Captura o feedback enviado
