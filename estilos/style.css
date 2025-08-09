@@ -72,37 +72,17 @@ nav {
 
 }
 
-
 footer > button {
-    background-color: var(--cor5);
+    background-color:var(--cor5);
     color: var(--cor1);
     padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition-duration: .5s;
-}
-
-button {
-    background-color: var(--cor5);
-    color: var(--cor1);
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition-duration: .5s;
-}
-
-button > a {
-    text-align: justify;
-    color: var(--cor4);
     margin:5px;
-    padding: 10px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     transition-duration: .5s;
 }
+
 footer > button > a {
     text-align: justify;
     color: var(--cor4);
@@ -114,7 +94,31 @@ footer > button > a {
     transition-duration: .5s;
 }
 
-button > a:hover {
+nav > button {
+    background-color:var(--cor5);
+    color: var(--cor1);
+    padding: 10px;
+    margin:5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+
+button > a {
+    text-align: justify;
+    color: var(--cor4);
+    margin:5px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+footer > button > a:hover {
+    color:var(--cor3);
     background-color: var(--cor5);
     margin:5px;
     padding: 10px;
@@ -123,7 +127,8 @@ button > a:hover {
     font-weight: bold;
     transition-duration: .5s;
 }
-footer > button > a:hover {
+
+button > a:hover {
     background-color: var(--cor5);
     margin:5px;
     padding: 10px;
@@ -161,7 +166,7 @@ main {
     text-indent: 8px;
 }
 
-p {
+  p {
     margin: 15px 0px;
     text-align: justify;
     text-indent: 30px;
