@@ -1,26 +1,28 @@
 <?php
-$nome = $_POST['nome'];
-$email = $_POST['email'];
-$mensagem = $_POST['feedback'];
+// Verifica se o formulário foi enviado via POST
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Captura o feedback enviado
+    $feedback = trim($_POST["feedback"]);
 
-// Conexão com o banco
-$conn = new mysqli("localhost", "seu_usuario", "sua_senha", "RegistroUsuarios");
+    // Verifica se o campo não está vazio
+    if (!empty($feedback)) {
+        // Define o caminho do arquivo onde os feedbacks serão armazenados
+        $arquivo = "feedbacks.txt";
 
-// Verifica conexão
-if ($conn->connect_error) {
-    die("Erro de conexão: " . $conn->connect_error);
-}
+        // Prepara o conteúdo com data e hora
+        $data = date("d/m/Y H:i:s");
+        $conteudo = "[$data] - $feedback" . PHP_EOL;
 
-// Prepared statement para segurança
-$stmt = $conn->prepare("INSERT INTO InputsUsuario (nome, email, mensagem) VALUES (?, ?, ?)");
-$stmt->bind_param("sss", $nome, $email, $mensagem);
-
-if ($stmt->execute()) {
-    echo "Feedback enviado com sucesso!";
+        // Tenta escrever no arquivo
+        if (file_put_contents($arquivo, $conteudo, FILE_APPEND | LOCK_EX)) {
+            echo "<h2>Obrigado pelo seu feedback!</h2>";
+        } else {
+            echo "<h2>Erro ao salvar o feedback. Tente novamente mais tarde.</h2>";
+        }
+    } else {
+        echo "<h2>O campo de feedback está vazio.</h2>";
+    }
 } else {
-    echo "Erro ao enviar feedback: " . $stmt->error;
+    echo "<h2>Requisição inválida.</h2>";
 }
-
-$stmt->close();
-$conn->close();
 ?>
